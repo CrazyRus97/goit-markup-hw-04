@@ -358,10 +358,6 @@ img {
   border-color: var(--accent-color);
 }
 
-.customers-list-link:hover .customers-list-icon,
-.customers-list-link:focus .customers-list-icon {
-  fill: var(--accent-color);
-}
 /*========== /CUSTOMERS ==========*/
 /*==================================== /STUDIO ====================================*/
 
