@@ -7,6 +7,7 @@
   --secondary-color-dark-theme: #434455;
   --primary-brand-color: #4d5ae5;
   --accent-color: #404bbf;
+  --success-color: #31d0aa;
 }
 
 body {
@@ -181,6 +182,10 @@ img {
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--primary-color-dark-theme);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-container {
@@ -214,6 +219,16 @@ img {
 
 .features-list-item {
   width: calc((100% - 72px) / 4);
+}
+
+.features-list-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
+  background-color: var(--primary-color-light-theme);
 }
 
 .features-list-title {
@@ -285,13 +300,69 @@ img {
 }
 
 .employees-list-position {
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
 }
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--success-color);
+}
+
 /*========== /TEAM MEMBERS ==========*/
+
+/*========== CUSTOMERS ==========*/
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: var(--accent-color);
+}
+
+.customers-list-link:hover .customers-list-icon,
+.customers-list-link:focus .customers-list-icon {
+  fill: var(--accent-color);
+}
+/*========== /CUSTOMERS ==========*/
 /*==================================== /STUDIO ====================================*/
 
 /*==================================== PORTFOLIO ====================================*/
@@ -352,6 +423,12 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+.portfolio-list-item:hover .portfolio-list-text,
+.portfolio-list-item:focus .portfolio-list-text {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-name {
