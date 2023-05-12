@@ -369,6 +369,15 @@ img {
   border-color: var(--accent-color);
 }
 
+.customers-list-link:hover,
+.customers-list-link:focus {
+  color: var(--accent-color);
+}
+
+.customers-list-icon {
+  fill: currentColor;
+}
+
 /*========== /CUSTOMERS ==========*/
 /*==================================== /STUDIO ====================================*/
 
