@@ -107,6 +107,26 @@ img {
 .second-part-logo-light-theme {
   color: var(--primary-color-dark-theme);
 }
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--success-color);
+}
+
 /*====================================  /COMPONENTS ==================================== */
 
 /*==================================== HEADER ====================================*/
@@ -307,28 +327,6 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
 }
-
-.social-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-
-.social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--primary-brand-color);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--success-color);
-}
-
 /*========== /TEAM MEMBERS ==========*/
 
 /*========== CUSTOMERS ==========*/
@@ -456,6 +454,11 @@ img {
   margin-bottom: 16px;
 }
 
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
+
 .footer-text {
   max-width: 264px;
   font-weight: 400;
@@ -463,5 +466,14 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-color-light-theme);
+}
+
+.social-media-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-light-theme);
 }
 /*==================================== /FOOTER ====================================*/
