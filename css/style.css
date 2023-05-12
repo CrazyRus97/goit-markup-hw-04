@@ -110,9 +110,6 @@ img {
   justify-content: center;
   gap: 24px;
 }
-.footer-social-list {
-  gap: 16px;
-}
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -505,5 +502,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color-light-theme);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 /*==================================== /FOOTER ====================================*/
