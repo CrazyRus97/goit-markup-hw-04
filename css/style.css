@@ -122,8 +122,12 @@ img {
   border-radius: 50%;
   background-color: var(--primary-brand-color);
 }
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link-light:hover,
+.social-list-link-light:focus {
+  background-color: var(--accent-color);
+}
+.social-list-link-dark:hover,
+.social-list-link-dark:focus {
   background-color: var(--success-color);
 }
 
@@ -136,6 +140,8 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -199,6 +205,7 @@ img {
 /*==================================== STUDIO ====================================*/
 /*========== HERO ==========*/
 .hero {
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--primary-color-dark-theme);
@@ -206,6 +213,7 @@ img {
     url('../images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero-container {
@@ -306,7 +314,7 @@ img {
 }
 
 .employees-list-text {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .employees-list-name {
