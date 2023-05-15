@@ -435,6 +435,7 @@ img {
 
 .portfolio-list-link {
   display: block;
+  color: var(--secondary-color-dark-theme);
 }
 
 .portfolio-list-link:hover,
